@@ -1,20 +1,42 @@
 #!/usr/bin/python3
-"""method that determines if all the boxes can be opened"""
+"""A python module that determines if all boxes can be opened
+   from a list of lists
+"""
 
-def canUnlockAll(boxes):
 
-    if (type(boxes) is not list):
+def canUnlockAll(boxes=[]):
+    """A function that returns True of all box in
+    boxes can be opend
+    """
+    if not boxes:
         return False
 
-    if (len(boxes) == 0):
+    keys = set([0])
+    for box_id, box in enumerate(boxes):
+        for key in box:
+            if key < len(boxes) and key != box_id:
+                keys.add(key)
+
+    if len(keys) != len(boxes):
         return False
 
-    keys = [0]
-    for i in keys:
-        for j in boxes[i]:
-            if j not in keys and j != i and j < len(boxes) and j != 0:
-                keys.append(j)
-    if len(keys) == len(boxes):
-        return True
-    else:
-        return False
+    return True
+
+
+if __name__ == '__main__':
+    boxes = [
+                [1, 3],
+                [2],
+                [3, 0],
+                [1, 2, 3],
+            ]
+    print(unlockBoxes(boxes))
+
+    boxes = [[1], [2], [3], [4], []]
+    print(canUnlockAll(boxes))
+
+    boxes = [[1, 4, 6], [2], [0, 4, 1], [5, 6, 2], [3], [4, 1], [6]]
+    print(unlockBoxes(boxes))
+
+    boxes = [[1, 4], [2], [0, 4, 1], [3], [], [4, 1], [5, 6]]
+    print(unlockBoxes(boxes))
