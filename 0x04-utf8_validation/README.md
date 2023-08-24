@@ -1,6 +1,6 @@
 # UTF-8 Validation 
 
-![](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://m.youtube.com/watch%3Fv%3Dsk4wohDcLLs&ved=2ahUKEwin07_Ds_OAAxUwygIHHY_bBjsQwqsBegQIDxAB&usg=AOvVaw3dGL7BafNOVMfQcMV_aMl4)
+[ UTF-8 Validation ](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://m.youtube.com/watch%3Fv%3Dsk4wohDcLLs&ved=2ahUKEwin07_Ds_OAAxUwygIHHY_bBjsQwqsBegQIDxAB&usg=AOvVaw3dGL7BafNOVMfQcMV_aMl4)
 
 # Resources
 Read or watch:
